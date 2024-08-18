@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Analyst Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .banner {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://via.placeholder.com/1500x400');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .about, .services, .portfolio, .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2, .services h2, .portfolio h2, .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #000;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>SEO Analyst</h1>
+            <p>Optimizing the web, one page at a time</p>
+            <a href="#portfolio" class="btn">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate SEO Analyst with years of experience in helping websites rank higher and perform better.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Services</h2>
+        <div class="services-list">
+            <div class="service">
+                <h3>SEO Audits</h3>
+                <p>Comprehensive website analysis to identify issues and opportunities.</p>
+            </div>
+            <div class="service">
+                <h3>Keyword Research</h3>
+                <p>Finding the best keywords to target for maximum impact.</p>
+            </div>
+            <div class="service">
+                <h3>On-Page SEO</h3>
+                <p>Optimizing individual pages to rank higher and earn more traffic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+            <div class="portfolio-item">Project 4</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to discuss your next project!</p>
+        <a href="mailto:your.email@example.com" class="btn">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
